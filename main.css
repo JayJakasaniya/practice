@@ -1,0 +1,180 @@
+body{
+    background-color: azure;
+}
+
+.navbar{
+    background-color: #333;
+}
+.ordersummury{
+display: none;
+}
+.ordersummurybox{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.displayTime{
+    margin: 15px;
+  }
+  .wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    
+  }
+.inputnumber{
+    display: none;
+}
+ .inputtext {
+    position: relative;
+    font-size: 16px;
+    margin-bottom: .75em;
+  }
+  
+  label {
+    position: absolute;
+    top: 50%;
+    left: .25em;
+    margin-left: 3px;
+    margin-top: -.7em;
+    
+    color: #444;
+    cursor: text; 
+  
+    transition: font-size .25s, 
+      top .25s,
+      left .25s,
+      color .25s;
+  }
+  
+  .inputtext input,select{
+  
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 50px;
+    padding: 5px 15px;
+    &:focus {
+      & + label {
+        color: #333;
+      }
+    }
+    
+  }
+  
+  input[value] + label,
+  input:focus + label,
+  input:valid + label
+  {
+    font-size: .75em;
+    top: 0;
+    left: 1em;
+    background: #fff;
+    cursor: auto;
+    pointer-events: none;
+    padding: 0px 10px;
+  }
+
+  .cbutton{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10PX 20px;
+    border-radius: 30px;
+  }
+  .carttimer{
+    width: 500px;
+    border-radius: 25px;
+    background-color: rgb(210, 210, 210);
+    padding: 30px 50px;
+  }
+  .expresscheckoutbox{
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: white;
+    padding: 30px 30px;
+  }
+  .messagebox{
+    background-color: white;
+    border-radius: 25px;
+    padding: 30px 50px;
+    border: 1px solid black;
+  }
+  .message2{
+    background-color: white;
+    border-radius: 25px;
+    padding: 30px 50px;
+    border: 1px solid black;
+  }
+
+  @media (width <=800) {
+  body{
+    background-color: #333;
+    align-items: center;
+    text-align: center;
+  }
+  .mainpage{
+    display: flex;
+    flex-direction: column;
+  }
+  .ordersummury{
+    display: block;
+  }
+  .cartbox{
+    width: 100%;
+  }
+    .checkoutpage{
+    display: flex;
+    flex-direction: column;
+  } 
+  .inputnumber{
+    display: block;
+  }
+.items{
+    display: none;
+}
+  .messagebox{
+    width: 100%;
+  }
+  .message2{
+    display: none;
+  }
+  }
+
+
+  @media  (width <= 400px) {
+body{
+    align-items: center;
+    text-align: center;
+  }
+  .ordersummury{
+    display: block;
+  }
+  .cartbox{
+    width: 100%;
+  }
+    .checkoutpage{
+    display: flex;
+    flex-direction: column;
+  } 
+  .inputnumber{
+    display: block;
+  }
+.items{
+    display: none;
+}
+  .messagebox{
+    width: 100%;
+  }
+  .message2{
+    display: none;
+  }
+      }
+
+ 
